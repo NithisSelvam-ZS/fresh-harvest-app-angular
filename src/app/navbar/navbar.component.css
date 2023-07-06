@@ -17,6 +17,10 @@
   align-items: flex-end;
 }
 
+.custom-button{
+  border: none;
+}
+
 /* .navbar-right{
  margin-left: 313px;
 
