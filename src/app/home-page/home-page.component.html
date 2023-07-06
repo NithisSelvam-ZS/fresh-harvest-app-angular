@@ -1,5 +1,28 @@
-<div class="w-100 h-100 m-0">
+<div class="w-100 h-100 m-0 overflow-hidden">
   <div class="img-fluid">
     <img src="assets/homePageImage/Images.png" class="img-fluid" alt="Home Page Image">
+  </div>
+
+  <div class="row  mt-5">
+    <div class="col-12 ms-5">
+      <div class="card-title ms-3 custom-text">
+        Featured Promos
+        <span><img src="assets/homePageImage/leftArrow.svg" class="img ms-2 custom-arrow" alt="Left Arrow" width="20px"
+            height="20px"></span>
+        <span><img src="assets/homePageImage/rightArrow.svg" class="img ms-2 me-2 custom-arrow" alt="Left Arrow" width="20px"
+            height="20px"></span>
+        <span class="text-danger ms-3 custom-text">View All</span>
+      </div>
+    </div>
+
+    <div class="col-12  ms-5 mt-5">
+      <div class="row">
+        <div class="col-4"  *ngFor="let item of PromotionImage">
+          <img class="img-fluid" src="{{item.imgSrc}}" alt="Promotion Image">
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </div>

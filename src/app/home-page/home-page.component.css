@@ -2,3 +2,26 @@
   width: 100%;
   height: 100%;
 }
+/* Custom-text for modify the text format */
+.custom-text{
+  color: #415162;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* custom-card */
+.custom-card{
+  width: 26rem;
+  border: none;
+}
+
+/* this is for constimize the ui based on screen size */
+@media (max-width: 500px) {
+ .custom-text{
+  font-size: 16px;
+ }
+ .custom-arrow{
+  width: 13px;
+  height: 13px;
+ }
+}

@@ -1,0 +1,12 @@
+{
+    "PromotionImage":[
+      {
+        "id":1,
+        "imgSrc":"assets/homePageImage/Promo1.png"
+      },
+      {
+        "id":2,
+        "imgSrc":"assets/homePageImage/Promo2.png"
+      }
+    ]
+}
