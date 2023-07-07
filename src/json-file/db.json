@@ -1,0 +1,61 @@
+{
+  "PromotionImage": [
+    {
+      "id": 1,
+      "imgSrc": "assets/homePageImage/Promo1.png"
+    },
+    {
+      "id": 2,
+      "imgSrc": "assets/homePageImage/Promo2.png"
+    },
+    {
+      "id": 3,
+      "imgSrc": "assets/homePageImage/Promo3.png"
+    }
+
+  ],
+  "shopCategory": [
+    {
+      "categoryHeading": "Dairy",
+      "item1": "Milk",
+      "item2": "Butter",
+      "item3": "Cheese",
+      "id": 1
+    },
+    {
+      "categoryHeading": "Poultry",
+      "item1": "Egg",
+      "item2": "Chicken",
+      "item3": "Turkey",
+      "id": 2
+    },
+    {
+      "categoryHeading": "Sea Food",
+      "item1": "Shrimps",
+      "item2": "Fish",
+      "item3": "Lobster",
+      "id": 3
+    },
+    {
+      "categoryHeading": "Vegetables",
+      "item1": "Leafy",
+      "item2": "Roots",
+      "item3": "Seasoning",
+      "id": 4
+    },
+    {
+      "categoryHeading": "Fresh Fruits",
+      "item1": "Apples",
+      "item2": "Citrus",
+      "item3": "Exotic",
+      "id": 5
+    },
+    {
+      "categoryHeading": "Flowers",
+      "item1": "Roses",
+      "item2": "Blue and Blush",
+      "item3": "Festive",
+      "id": 6
+    }
+  ]
+}

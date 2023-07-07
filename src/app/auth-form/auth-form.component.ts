@@ -8,5 +8,15 @@ import { Component } from '@angular/core';
 export class AuthFormComponent {
 
   islogginForm=true;
+  isRegisterForm = false;
+
+  onClickRegister(){
+    this.islogginForm=false;
+    this.isRegisterForm=true;
+  }
+  onClickLogin(){
+    this.islogginForm=true;
+    this.isRegisterForm=false;
+  }
 
 }
