@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { CategoryService } from 'src/Services/category.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,11 +7,26 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  categoryList: any;
 
-  // constructor(private router:Router){}
 
-  // onClick(){
-  //   this.router.navigate(['/Auth']);
-  // }
+  constructor(private categoryService:CategoryService) {}
+
+  showCategoryList = false;
+
+    toggleCategoryList() {
+        this.showCategoryList = !this.showCategoryList;
+        console.log(this.showCategoryList);
+    }
+
+    ngOnInit():void{
+    this.categoryService.getcategoryData().subscribe({
+      next : (data)=>{this.categoryList =data},
+      error: (error)=>{console.error(error)}
+    })
+    }
+
+
+
 
 }
