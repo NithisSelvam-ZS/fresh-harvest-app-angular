@@ -14,4 +14,8 @@ export class PromationService {
     return this.http.get(this.baseUrl+'PromotionImage');
   }
 
+  getFarmsData():Observable<any>{
+    return this.http.get(this.baseUrl+'Farms');
+  }
+
 }

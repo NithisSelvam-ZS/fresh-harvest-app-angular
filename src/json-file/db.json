@@ -57,5 +57,12 @@
       "item3": "Festive",
       "id": 6
     }
+  ],
+  "Farms":[
+    {
+      "id":"1",
+      "FarmsImage":"assets/farmsImage/gorgeFarm.png",
+      "FarmsName":"Gorge Farm"
+    }
   ]
 }

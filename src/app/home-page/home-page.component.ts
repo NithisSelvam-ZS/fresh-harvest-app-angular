@@ -9,12 +9,14 @@ import { PromationService } from 'src/Services/promation.service';
 export class HomePageComponent {
 
   PromotionImage:any=[];
+  Farms:any=[];
 
   constructor(private promationService: PromationService) {
     this.getImage()
   }
   ngOnInit(): void {
     this.getImage();
+    this.getFarms();
   }
 
   getImage() {
@@ -28,5 +30,15 @@ export class HomePageComponent {
         console.error(error);
       },
     });
+  }
+
+  getFarms(){
+    this.promationService.getFarmsData().subscribe({
+      next: (data)=>{
+        console.log(data);
+        this.Farms = data},
+      error: (error)=>{console.error(error);
+      }
+    })
   }
 }

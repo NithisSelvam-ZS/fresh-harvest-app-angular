@@ -39,7 +39,7 @@ border: none;
  .custom-text{
   font-size: 15px;
   display: flex;
-  margin-left: 30px;
+  justify-content: center;
  }
  .custom-arrow{
   width: 13px;
@@ -55,6 +55,9 @@ border: none;
 @media (max-width: 700px) {
   .custom-text{
    font-size: 18px;
+   display: flex;
+  justify-content: center;
+
   }
   .custom-arrow{
    width: 13px;

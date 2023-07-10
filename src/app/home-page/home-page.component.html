@@ -87,8 +87,9 @@
 
         <div class="col-12 text-center mt-5 mb-5 promoImage">
           <div class="row">
-            <div class="col-12 col-md-4 col-lg-4" >
-              <img class="img-fluid custom-promoImage  mb-4" src="" alt="Loading...">
+            <div class="col-12 col-md-4 col-lg-4" *ngFor="let farms of Farms" >
+              <img class="img-fluid custom-promoImage  mb-2" src="{{farms.FarmsImage}}" alt="Loading...">
+              <div class="mt-0">{{farms.FarmsName}}</div>
             </div>
           </div>
         </div>
