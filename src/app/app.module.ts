@@ -9,6 +9,7 @@ import { AuthFormComponent } from './auth-form/auth-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './footer/footer.component';
+import { FarmsHomeComponent } from './farms-home/farms-home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
     AuthFormComponent,
     NavbarComponent,
     HomePageComponent,
-    FooterComponent
+    FooterComponent,
+    FarmsHomeComponent
   ],
   imports: [
     BrowserModule,
