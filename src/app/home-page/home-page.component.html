@@ -16,9 +16,10 @@
       </div>
     </div>
 
+
     <div class="col-12 text-center mt-5 mb-5 promoImage">
       <div class="row">
-        <div class="col-12 col-md-4 col-lg-4" *ngFor="let item of PromotionImage">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngFor="let item of PromotionImage">
           <img class="img-fluid custom-promoImage  mb-4" src="{{item.imgSrc}}" alt="Promotion Image">
         </div>
       </div>
@@ -68,7 +69,7 @@
 
       <div class="col-12 text-center mt-5 mb-5 promoImage">
         <div class="row">
-          <div class="col-12 col-md-4 col-lg-4" >
+          <div class="col-12 col-md-4 col-lg-4">
             <img class="img-fluid custom-promoImage  mb-4" src="" alt="Loading...">
           </div>
         </div>
@@ -87,14 +88,11 @@
 
         <div class="col-12 text-center mt-5 mb-5 promoImage">
           <div class="row">
-            <div class="col-12 col-md-4 col-lg-4" >
-              <img class="img-fluid custom-promoImage  mb-4" src="" alt="Loading...">
+            <div class="col-6 col-md-3 col-lg-2 p-2" *ngFor="let farms of Farms">
+              <img class="img-fluid custom-farmsImage  mb-2 " src="{{farms.FarmsImage}}" alt="Loading...">
+              <div class="mt-0">{{farms.FarmsName}}</div>
             </div>
           </div>
         </div>
-
-
-
-
+      </div>
     </div>
-  </div>

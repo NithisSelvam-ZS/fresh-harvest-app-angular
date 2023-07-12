@@ -39,7 +39,7 @@ border: none;
  .custom-text{
   font-size: 15px;
   display: flex;
-  margin-left: 30px;
+  justify-content: center;
  }
  .custom-arrow{
   width: 13px;
@@ -47,18 +47,49 @@ border: none;
  }
 
  .custom-promoImage{
-  width: 288px;
+  width: auto;
   height: 188px;
+  align-items: center;
+ }
+ .custom-farmsImage{
+  width: auto;
+  height: 98px;
   align-items: center;
  }
 }
 @media (max-width: 700px) {
   .custom-text{
    font-size: 18px;
+   display: flex;
+  justify-content: center;
+
   }
   .custom-arrow{
    width: 13px;
    height: 13px;
   }
+
+ }
+ @media (max-width: 900px) {
+  .custom-text{
+   font-size: 18px;
+   display: flex;
+
+  }
+  .custom-arrow{
+   width: 13px;
+   height: 13px;
+  }
+  .custom-promoImage{
+    width: auto;
+    height: 130px;
+
+   }
+   .custom-farmsImage{
+    width: auto;
+    height: 100px;
+    margin-top: 2px;
+    align-items: center;
+   }
 
  }
