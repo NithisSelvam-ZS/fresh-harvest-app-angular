@@ -58,6 +58,11 @@
   border-bottom: none;
 }
 
+.border-danger {
+  border-color: red;
+}
+
+
 
 /* this is for constimize the ui based on screen size */
 @media (max-width: 500px) {

@@ -1,4 +1,11 @@
 {
+  "Users": [
+    {
+      "Email": "Nithis@gmail.com",
+      "Password": "2631",
+      "id": 1
+    }
+  ],
   "PromotionImage": [
     {
       "id": 1,
@@ -12,7 +19,6 @@
       "id": 3,
       "imgSrc": "assets/homePageImage/Promo3.png"
     }
-
   ],
   "shopCategory": [
     {
@@ -58,36 +64,36 @@
       "id": 6
     }
   ],
-  "Farms":[
+  "Farms": [
     {
-      "id":"1",
-      "FarmsImage":"assets/farmsImage/gorgeFarm.png",
-      "FarmsName":"Gorge Farm"
+      "id": "1",
+      "FarmsImage": "assets/farmsImage/gorgeFarm.png",
+      "FarmsName": "Gorge Farm"
     },
     {
-      "id":"2",
-      "FarmsImage":"assets/farmsImage/marthaFresh.png",
-      "FarmsName":"Martha's Fresh Farm"
+      "id": "2",
+      "FarmsImage": "assets/farmsImage/marthaFresh.png",
+      "FarmsName": "Martha's Fresh Farm"
     },
     {
-      "id":"3",
-      "FarmsImage":"assets/farmsImage/mathewFarm.png",
-      "FarmsName":"Mathew Farm"
+      "id": "3",
+      "FarmsImage": "assets/farmsImage/mathewFarm.png",
+      "FarmsName": "Mathew Farm"
     },
     {
-      "id":"4",
-      "FarmsImage":"assets/farmsImage/josephFarm.png",
-      "FarmsName":"Gorge Farm"
+      "id": "4",
+      "FarmsImage": "assets/farmsImage/josephFarm.png",
+      "FarmsName": "Gorge Farm"
     },
     {
-      "id":"5",
-      "FarmsImage":"assets/farmsImage/kaysChick.png",
-      "FarmsName":"Kay's Chick Farm"
+      "id": "5",
+      "FarmsImage": "assets/farmsImage/kaysChick.png",
+      "FarmsName": "Kay's Chick Farm"
     },
     {
-      "id":"1",
-      "FarmsImage":"assets/farmsImage/aiOrgoFarm.png",
-      "FarmsName":"AI-Orgo Farm"
+      "id": "1",
+      "FarmsImage": "assets/farmsImage/aiOrgoFarm.png",
+      "FarmsName": "AI-Orgo Farm"
     }
   ]
 }
