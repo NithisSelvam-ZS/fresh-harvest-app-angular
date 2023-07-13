@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FarmsHomeComponent } from './farms-home/farms-home.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { CategoryPageComponent } from './category-page/category-page.component';
 
 
 
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path:'Navbar', component:NavbarComponent},
   {path:'Footer', component:FooterComponent},
   {path:'Farms', component:FarmsHomeComponent},
-  {path:'Sidebar', component:SideBarComponent}
+  {path:'Sidebar', component:SideBarComponent},
+  {path:'Category',component:CategoryPageComponent}
 ];
 
 @NgModule({

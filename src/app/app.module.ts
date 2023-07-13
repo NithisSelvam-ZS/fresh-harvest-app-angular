@@ -13,6 +13,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { FarmsHomeComponent } from './farms-home/farms-home.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { CategoryPageComponent } from './category-page/category-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     HomePageComponent,
     FooterComponent,
     FarmsHomeComponent,
-    SideBarComponent
+    SideBarComponent,
+    CategoryPageComponent
   ],
   imports: [
     BrowserModule,
