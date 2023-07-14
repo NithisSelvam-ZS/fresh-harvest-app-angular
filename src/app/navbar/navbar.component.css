@@ -19,6 +19,10 @@
 
 .custom-button {
   border: none;
+  padding: 0px;
+}
+.custom-rightNavbar {
+  cursor: pointer;
 }
 
 /* .navbar-right{
@@ -51,11 +55,21 @@
   z-index: 9999;
   background-color: white;
 }
-.locationInput {
+.recentSearchList {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  position: absolute;
+  z-index: 9999;
+  background-color: white;
+}
+.inputField {
   width: 100%;
   outline: none;
   border: 1px solid #e4e8e9;
-  padding: 0px 3px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  padding: 0px 5px;
 }
 .categoryContainer {
   display: flex;
@@ -88,6 +102,15 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.searchSection {
+  display: flex;
+  border: 1px solid #c1c2c4;
+  border-radius: 5px;
+}
+.closeButton {
+  border: none;
 }
 
 @media (max-width: 1024px) {

@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { AuthFormComponent } from './auth-form/auth-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -14,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FarmsHomeComponent } from './farms-home/farms-home.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { CategoryPageComponent } from './category-page/category-page.component';
     FooterComponent,
     FarmsHomeComponent,
     SideBarComponent,
-    CategoryPageComponent
+    CategoryPageComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,

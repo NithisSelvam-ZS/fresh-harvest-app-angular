@@ -1,0 +1,11 @@
+.searchList {
+  list-style-type: none;
+  padding: 0px;
+}
+.searchList li {
+  line-height: 2;
+}
+.recentSearchs {
+  width: 215px;
+  font-family: "Open Sans", sans-serif;
+}
