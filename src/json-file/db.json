@@ -20,6 +20,68 @@
       "imgSrc": "assets/homePageImage/Promo3.png"
     }
   ],
+  "categoryList": [
+    {
+      "id": 1,
+      "imgSrc": "assets/categoryPageImage/dairyImage.png",
+      "categoryTitle": "Dairy"
+    },
+    {
+      "id": 2,
+      "imgSrc": "assets/categoryPageImage/poultryImage.png",
+      "categoryTitle": "Poultry"
+    },
+    {
+      "id": 3,
+      "imgSrc": "assets/categoryPageImage/seafoodImage.png",
+      "categoryTitle": "Sea Food"
+    },
+    {
+      "id": 4,
+      "imgSrc": "assets/categoryPageImage/veggiesImage.png",
+      "categoryTitle": "Vegetables"
+    },
+    {
+      "id": 5,
+      "imgSrc": "assets/categoryPageImage/fruitsImage.png",
+      "categoryTitle": "Fruits"
+    },
+    {
+      "id": 6,
+      "imgSrc": "assets/categoryPageImage/flowersImage.png",
+      "categoryTitle": "Flowers"
+    },
+    {
+      "id": 7,
+      "imgSrc": "assets/categoryPageImage/herbsImage.png",
+      "categoryTitle": "Herbs"
+    },
+    {
+      "id": 8,
+      "imgSrc": "assets/categoryPageImage/seasoningsImage.png",
+      "categoryTitle": "Seasonings"
+    },
+    {
+      "id": 9,
+      "imgSrc": "assets/categoryPageImage/datesImage.jpg",
+      "categoryTitle": "Dates"
+    },
+    {
+      "id": 10,
+      "imgSrc": "assets/categoryPageImage/honeyImage.jpg",
+      "categoryTitle": "Honey"
+    },
+    {
+      "id": 11,
+      "imgSrc": "assets/categoryPageImage/nutsImage.png",
+      "categoryTitle": "Nuts"
+    },
+    {
+      "id": 12,
+      "imgSrc": "assets/categoryPageImage/breadImage.jpg",
+      "categoryTitle": "Bread"
+    }
+  ],
   "shopCategory": [
     {
       "categoryHeading": "Dairy",

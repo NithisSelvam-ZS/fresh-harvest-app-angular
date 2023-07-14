@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-white shadow bg-white fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-white shadow bg-white">
   <div class="container-fluid">
     <a class="navbar-brand ms-5  mt-1 p-2" href="#">LOGO</a>
     <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -15,23 +15,26 @@
         </li>
         <li class="nav-item ms-4 me-3">
           <button type="button" class="nav-link cusotme-Explore" (click)="exploreClicked()"
-            [class.explore-active]="isExploreClicked" [routerLink]="['/Farms']" [ngClass]="{ 'active': isExploreClicked }">Explore Farms</button>
+            [class.explore-active]="isExploreClicked" [routerLink]="['/Farms']"
+            [ngClass]="{ 'active': isExploreClicked }">Explore Farms</button>
         </li>
       </ul>
     </div>
     <div class="collapse navbar-collapse float-end justify-content-end" id="navbarNav">
-      <ul class="navbar-nav ">
+      <ul class="navbar-nav align-items-center">
         <li class="nav-item me-3">
           <a class="nav-link active" aria-current="page">
             <i class="bi bi-search me-2"></i>
             Search
           </a>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link active" aria-current="page">
-            <i class="bi bi-geo-alt"></i>
-            Location
-            <i class="bi bi-chevron-down ms-1"></i>
+        <li class="nav-item">
+          <a class="nav-link active pd-0" aria-current="page">
+            <i class="bi bi-geo-alt "></i>
+            {{District ||'Location'}}
+            <button class="btn custom-button" (click)="toggleLocationList()">
+              <i class="bi bi-chevron-down ms-1"></i>
+            </button>
           </a>
         </li>
         <li class="nav-item me-3">
@@ -79,6 +82,16 @@
         </div>
       </div>
     </div>
-    <button type="button" class="btn viewAllCategory">View all Categories</button>
+    <button type="button" class="btn viewAllCategory" routerLink="Category" (click)="toggleCategoryListOff()">View all
+      Categories</button>
+  </div>
+</div>
+
+<!-- To display the Section to input Location -->
+
+<div class="shadow p-2 mb-1 mt-2 bg-body rounded locationList" *ngIf="showLocationList">
+  <div class="locationInputSection">
+    <input type="text" placeholder="Enter Pincode" maxlength="6" class="locationInput" (input)="updateLocation()"
+      [(ngModel)]="Pincode">
   </div>
 </div>
