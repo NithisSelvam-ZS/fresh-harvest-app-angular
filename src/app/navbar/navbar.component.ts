@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CategoryService } from 'src/Services/category.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { PostalcodeService } from 'src/Services/postalcode.service';
+import { SearchService } from 'src/Services/search.service';
 
 @Component({
   selector: 'app-navbar',
@@ -14,15 +15,27 @@ export class NavbarComponent {
   isExploreClicked: boolean = false;
   Pincode: string = '';
   District: string = '';
+  searchValue: string = '';
 
   constructor(
     private categoryService: CategoryService,
     private router: Router,
-    private postalcodeService:PostalcodeService
+    private postalcodeService: PostalcodeService,
+    private searchService: SearchService
   ) {}
 
   showCategoryList = false;
   showLocationList = false;
+  showSearch: boolean = false;
+
+  toggleSearch() {
+    this.showSearch = !this.showSearch;
+  }
+
+  closeSearch() {
+    this.showSearch = false;
+    this.searchValue = '';
+  }
 
   toggleCategoryList() {
     this.showCategoryList = !this.showCategoryList;
@@ -39,8 +52,8 @@ export class NavbarComponent {
   //To Update Loaction When it is entered in the Location Field
   updateLocation() {
     if (this.Pincode && this.Pincode.trim() !== '') {
-      this.postalcodeService.getPincodeData(this.Pincode).subscribe(
-        (data) => {
+      this.postalcodeService.getPincodeData(this.Pincode).subscribe({
+        next: (data) => {
           const postOffices = data[0]?.PostOffice;
           if (postOffices && postOffices.length > 0) {
             this.District = postOffices[0].District;
@@ -51,12 +64,28 @@ export class NavbarComponent {
             this.District = 'Location';
           }
         },
-        (error) => {
+        error: (error) => {
           console.log('Error:', error);
-        }
-      );
+        },
+      });
     } else {
       console.log('Please enter a valid Pincode');
+    }
+  }
+
+  //To Post the search values in Db.Json
+  saveSearchValue() {
+    if (this.searchValue) {
+      this.searchService.saveSearchValue(this.searchValue).subscribe(
+        (response) => {
+          // Handle success if needed
+          console.log('Value saved:', this.searchValue);
+        },
+        (error) => {
+          // Handle error if needed
+          console.error('Error saving value:', error);
+        }
+      );
     }
   }
 
