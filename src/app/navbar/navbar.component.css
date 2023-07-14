@@ -26,24 +26,13 @@
 
 } */
 
-
-
-
 /* This style is for the Shop-By-Category */
-
 
 .navBar {
   display: flex;
   justify-content: space-between;
   color: #415162;
 }
-
-.btn-shopByCategory {
-  background-color: #80B435;
-  color: white;
-  border: none;
-}
-
 .categoryList {
   height: auto;
   padding: 20px;
@@ -53,29 +42,39 @@
   z-index: 9999;
   background-color: white;
 }
-
+.locationList {
+  width: 15%;
+  height: auto;
+  padding: 20px;
+  position: absolute;
+  left: 70%;
+  z-index: 9999;
+  background-color: white;
+}
+.locationInput {
+  width: 100%;
+  outline: none;
+  border: 1px solid #e4e8e9;
+  padding: 0px 3px;
+}
 .categoryContainer {
   display: flex;
   justify-content: space-evenly;
   margin: 15px;
 }
-
 .categoryViewAll {
-  color: #CE1126;
+  color: #ce1126;
   font-weight: 600;
 }
-
 .viewAllCategory {
   width: 100%;
   background-color: #80b435;
   color: white;
 }
-
 .colbody h5 {
   padding-bottom: 10px;
   color: #415162;
 }
-
 .card,
 .colbody {
   border: none;
@@ -84,19 +83,11 @@
   padding-left: 10px;
   margin-bottom: 20px;
 }
-
 .colbody ul,
 .col ul li {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-.cusotme-Explore{
-  color: #090d12;
-}
-.explore-active.active {
- color: #80B435;
-
 }
 
 @media (max-width: 1024px) {
@@ -104,18 +95,14 @@
     width: 100%;
   }
 }
-
-@media (max-width:990px) {
-
+@media (max-width: 990px) {
   .navbar-nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
 }
-
-@media (max-width : 767px) {
+@media (max-width: 767px) {
   .colbody {
     text-align: center;
     border: none;
