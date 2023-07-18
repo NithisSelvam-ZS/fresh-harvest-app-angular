@@ -20,6 +20,12 @@
       "imgSrc": "assets/homePageImage/Promo3.png"
     }
   ],
+  "recentSearch": [
+    {
+      "value": "Eggs",
+      "id": 1
+    }
+  ],
   "categoryList": [
     {
       "id": 1,

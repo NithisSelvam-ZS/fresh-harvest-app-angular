@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
 import { AppComponent } from './app.component';
 import { AuthFormComponent } from './auth-form/auth-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -13,8 +14,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { FarmsHomeComponent } from './farms-home/farms-home.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { SearchComponent } from './search/search.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
-import { DealOfTheDayComponent } from './deal-of-the-day/deal-of-the-day.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +26,8 @@ import { DealOfTheDayComponent } from './deal-of-the-day/deal-of-the-day.compone
     FooterComponent,
     FarmsHomeComponent,
     SideBarComponent,
-    CategoryPageComponent,
-    DealOfTheDayComponent
+    SearchComponent,
+    CategoryPageComponent
   ],
   imports: [
     BrowserModule,
