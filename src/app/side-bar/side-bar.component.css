@@ -1,3 +1,20 @@
 .custom-backgroundColor{
   background-color: #F7F7F7;
 }
+
+.container-fluid {
+  position: relative;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  /* You can use `right: 0;` instead of `left: 0;` if you want it to stretch to the right edge. */
+}
+
+/* .custome-checkbox{
+width: 15px;
+height: 15px;
+} */

@@ -12,7 +12,9 @@
   font-size: 16px;
   font-weight: 600;
 }
-
+.dodContent{
+  height: 523px;
+}
 /* custom-card */
 .custom-card{
   width: 26rem;

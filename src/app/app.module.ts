@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FarmsHomeComponent } from './farms-home/farms-home.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
+import { DealOfTheDayComponent } from './deal-of-the-day/deal-of-the-day.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CategoryPageComponent } from './category-page/category-page.component';
     FooterComponent,
     FarmsHomeComponent,
     SideBarComponent,
-    CategoryPageComponent
+    CategoryPageComponent,
+    DealOfTheDayComponent
   ],
   imports: [
     BrowserModule,

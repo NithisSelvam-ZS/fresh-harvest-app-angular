@@ -1,0 +1,52 @@
+<div class="w-100 h-100 m-0 overflow-hidden">
+  <div class="img-fluid">
+    <img src="assets/dealOfTheDay/deal-of-day.png" class="img-fluid" alt="DOD Page Image" width="100%">
+  </div>
+
+  <div class="row">
+    <div class="col-2 col-md-2 col-lg-2 custom-sideBar">
+      <app-side-bar></app-side-bar>
+    </div>
+    <div class="col-10">
+      <div class="col-12 mt-3 mb-2 ">
+        <span class="custom-homeColor">Home</span> / <span class="custom-farmsColor">Deal of the Day</span>
+      </div>
+
+      <div class="col-12 mt-2 mb-2">
+        <span class="custom-exploreFarms">Deal of the Day</span>
+      </div>
+
+      <div class="col-3 mt-5"*ngFor="let deal of dealData">
+        <div class="row">
+          <div class="col-3">
+            <div class="card custom-card">
+              <div class="card-img-top">
+                <img src="{{deal.DealImg}}"  alt="Dod Images" >
+                <div class="image-overlay">
+                  <div class="row m-0 p-0 text-center">
+                    <div class="bookMarkGray col-3 text-light p-1">Deal of the Day</div>
+                    <div class="bookMarkRed text-light p-1">{{deal.offerPercentage}} off</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="card-title">{{deal.AboutProduct}}</h6>
+                <p class="card-text">{{deal.AboutFarms}}</p>
+                <p class="card-text">{{deal.About}}</p>
+                <div class="card-text row">
+                  <span class="col-3 custom-textColor">{{deal.Kg}}</span>
+                  <span class="col-4 custom-textColor"><s>{{deal.Price}}</s></span>
+                  <span class="col-4 custom-priceColor">{{deal.OfferPrice}}</span>
+
+                </div>
+              </div>
+              <div class="card-footer text-center custom-CartBtn">
+                Add Cart
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

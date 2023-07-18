@@ -9,3 +9,24 @@ input.ng-invalid.ng-touched{
 .border-danger {
   border-color: red;
 }
+
+
+.custom-farmsColor {
+  color: #80B435;
+
+}
+.custom-homeColor {
+  color: #415162;
+
+}
+.custom-exploreFarms {
+  color: #415162;
+  font-size: 26px;
+  font-weight: 600;
+}
+.custom-sideBar{
+  height: 100vh;
+}
+
+
+

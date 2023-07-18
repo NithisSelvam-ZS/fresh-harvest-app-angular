@@ -32,8 +32,8 @@
           <a class="nav-link active pd-0" aria-current="page">
             <i class="bi bi-geo-alt "></i>
             {{District ||'Location'}}
-            <button class="btn custom-button" (click)="toggleLocationList()">
-              <i class="bi bi-chevron-down ms-1"></i>
+            <button class="btn custom-button" (click)="toggleLocationList()" id="toggle">
+              <i class="bi bi-chevron-down ms-1"></i><span hidden>toggle</span>
             </button>
           </a>
         </li>

@@ -157,5 +157,85 @@
       "FarmsImage": "assets/farmsImage/aiOrgoFarm.png",
       "FarmsName": "AI-Orgo Farm"
     }
+  ],
+  "CategoryList":[
+    {
+      "id":"1",
+      "CategoryList":"Dairy"
+    },
+    {
+      "id":"2",
+      "CategoryList":"Poultry"
+    },
+    {
+      "id":"3",
+      "CategoryList":"Sea Food"
+    },
+    {
+      "id":"4",
+      "CategoryList":"Vegetables"
+    },
+    {
+      "id":"5",
+      "CategoryList":"Fresh Fruits"
+    },
+    {
+      "id":"6",
+      "CategoryList":"Flowers"
+    }
+  ],
+  "Sub-CategoryList":[
+    {
+      "id":"1",
+      "CategoryList":"Milk"
+    },
+    {
+      "id":"2",
+      "CategoryList":"Butter"
+    },
+    {
+      "id":"3",
+      "CategoryList":"Cheese"
+    },
+    {
+      "id":"4",
+      "CategoryList":"Eggs"
+    },
+    {
+      "id":"5",
+      "CategoryList":"Chicken"
+    },
+    {
+      "id":"6",
+      "CategoryList":"Turkey"
+    }
+  ],
+  "DealOfTheDay":[
+    {
+      "id":"1",
+      "DealImg":"assets/dealOfTheDay/chicken.png",
+      "offerPercentage":"50%",
+      "AboutProduct":"Premium Antibiotic-residue-free Chicken Breast(Boneless)",
+      "AboutFarms":"From Gorge Farm",
+      "About":"Lorem ipsum is simply dummy test of the print and type setting...more",
+      "Kg":"1 Kg",
+      "Price":"13.330 KD",
+      "OfferPrice":"10.000 KD",
+      "CategoryList":"Poultry",
+      "Sub-CategoryList":"Chicken"
+    },
+    {
+      "id":"2",
+      "DealImg":"assets/dealOfTheDay/chicken.png",
+      "offerPercentage":"50%",
+      "AboutProduct":"Premium Antibiotic-residue-free Chicken Breast(Boneless)",
+      "AboutFarms":"From Gorge Farm",
+      "About":"Lorem ipsum is simply dummy test of the print and type setting...more",
+      "Kg":"1 Kg",
+      "Price":"13.330 KD",
+      "OfferPrice":"10.000 KD",
+      "CategoryList":"Poultry",
+      "Sub-CategoryList":"Chicken"
+    }
   ]
 }
