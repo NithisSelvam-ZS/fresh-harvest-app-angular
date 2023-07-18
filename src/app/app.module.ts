@@ -16,6 +16,7 @@ import { FarmsHomeComponent } from './farms-home/farms-home.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { SearchComponent } from './search/search.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
+import { DODComponent } from './dod/dod.component';
 
 @NgModule({
   declarations: [
@@ -25,9 +26,12 @@ import { CategoryPageComponent } from './category-page/category-page.component';
     HomePageComponent,
     FooterComponent,
     FarmsHomeComponent,
-    SideBarComponent,
     SearchComponent,
-    CategoryPageComponent
+    CategoryPageComponent,
+    SideBarComponent,
+    DODComponent,
+
+
   ],
   imports: [
     BrowserModule,
