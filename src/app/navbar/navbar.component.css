@@ -12,6 +12,10 @@
   color: #415162;
 }
 
+.search{
+  display: none;
+}
+
 .navbar-nav {
   display: flex;
   align-items: flex-end;

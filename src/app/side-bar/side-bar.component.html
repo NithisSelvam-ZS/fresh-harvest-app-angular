@@ -1,42 +1,37 @@
-<div class="container-fluid ">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-2 p-0 m-0 ">
+    <div class="col-md-2 p-0 m-0">
       <!-- Sidebar -->
-      <div class="sidebar ">
+      <div class="sidebar">
         <!-- Sidebar content -->
         <ul class="list-group mt-2">
+
           <!-- Category -->
-          <div>
-            <li class="list-group-item row custom-backgroundColor">
-              <span class=" col-8 ms-2">Category </span>
-              <img class="col-4 float-end" src="assets/sideBar/mainMenu.svg" alt="Main Menu Icon" width="100%"
-                height="30px" />
-            </li>
-            <div class="list-group-item row" >
-              <li class="mt-3" *ngFor="let list of categoryItem">
-                <span  class="col-8 ms-2">{{list.CategoryList}}</span>
-                <input class="col-3 float-end" type="checkbox" id="{{list.CategoryList}}" title="categoryItem">
-              </li>
+          <li class="list-group-item row custom-backgroundColor">
+            <span class="col-8 ms-2">Category </span>
+            <img class="col-4 float-end" src="assets/sideBar/mainMenu.svg" alt="Main Menu Icon" width="100%"
+              height="30px" />
+          </li>
+          <li class="list-group-item row" *ngFor="let category of categoryItem">
+            <div class="mt-3">
+              <span class="col-8 ms-2">{{ category.CategoryList }}</span>
+              <input class="col-3 float-end" type="checkbox" id="{{ category.CategoryList }}" title="categoryItem">
             </div>
+          </li>
 
-            <!-- Sub-Category  -->
-            <div>
-              <li class="list-group-item row custom-backgroundColor">
-                <span class=" col-8 ms-2">Sub-Category </span>
-                <img class="col-3 float-end" src="assets/sideBar/subMenu.svg" alt="Main Menu Icon" width="100%"
-                  height="23px" />
-              </li>
-              <div class="list-group-item row" >
-                <li class="mt-3" *ngFor="let list of subCategoryItem">
-                  <span class="col-8 ms-2">{{list.CategoryList}}</span>
-                  <input class="col-3 float-end" type="checkbox" id="{{list.CategoryList}}" title="subCategoryItem" >
-                </li>
-              </div>
+          <!-- Sub-Category -->
+          <li class="list-group-item row custom-backgroundColor">
+            <span class="col-8 ms-2">Sub-Category </span>
+            <img class="col-3 float-end" src="assets/sideBar/subMenu.svg" alt="Main Menu Icon" width="100%"
+              height="23px" />
+          </li>
+          <li class="list-group-item row" *ngFor="let subCategory of subCategoryItem">
+            <div class="mt-3">
+              <span class="col-8 ms-2">{{ subCategory.CategoryList }}</span>
+              <input class="col-3 float-end" type="checkbox" id="{{ subCategory.CategoryList }}" title="subCategoryItem">
             </div>
+          </li>
 
-
-
-          </div>
         </ul>
       </div>
     </div>
